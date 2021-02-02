@@ -1,0 +1,11 @@
+body {
+    background-color: #eee;
+}
+
+svg {
+    background-color: white;
+}
+
+.svg-text {
+    font-size: 12px;
+}
