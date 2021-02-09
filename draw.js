@@ -17,8 +17,17 @@ function drawLine(svg, {x1 = 0, y1 = 0, x2 = 0, y2 = 0, stroke = 'black', stroke
     svg.appendChild(element);
 }
 
-function drawCircle(svg, {cx = 0, cy = 0, r = 0, fill = 'black'}) {
-    const element = document.createElementNS(svgNS, 'circle');
+function drawCircle(svg, {cx = 0, cy = 0, r = 0, fill = 'black', id = null}) {
+    let element = id ? document.getElementById(id) : null;
+
+    if (!element) {
+        element = document.createElementNS(svgNS, 'circle');
+    }
+
+    if (id) {
+        element.setAttributeNS(null, 'id', id);
+    }
+
     element.setAttributeNS(null, 'cx', cx.toString());
     element.setAttributeNS(null, 'cy', cy.toString());
     element.setAttributeNS(null, 'r', r.toString());
