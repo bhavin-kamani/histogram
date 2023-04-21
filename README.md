@@ -29,12 +29,15 @@ The final plot should look something like below 👇
 <img width="1346" alt="inital" src="https://user-images.githubusercontent.com/78405901/233543760-b993ccfe-0445-4b9f-b7f5-55ed5c834dfe.png">
 
 > on clicking verify rule 1
+> If a point is above or below LCL or UCL
 <img width="1346" alt="1" src="https://user-images.githubusercontent.com/78405901/233543690-0fa8b80e-042f-403a-b101-40dd5230412c.png">
 
 > on clicking verify rule 2
+> if 5 consecutive points are monotonously increasing/decreasing
 <img width="1346" alt="2" src="https://user-images.githubusercontent.com/78405901/233543733-24e1842b-7635-42bc-bfd2-1107049273a8.png">
 
 > on clicking verify rule 3
+> if 6 consecutive points are on either side of target
 <img width="1346" alt="3" src="https://user-images.githubusercontent.com/78405901/233543745-4126f007-7986-49ad-8ac5-0de45c54e44c.png">
 
 > on clicking clear
