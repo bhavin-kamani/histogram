@@ -2,27 +2,41 @@
 
 
 
-# FELLAS, we are producing chocolates now
+### Statistical Process Control Chart
 
-The chart that we are making is called a statistical process control chart, or sometimes just short control chart. It is a standard tool used by quality managers in a manufacturing environment, for instance, let's assume we are producing a chocolate bar. We should aim for a target weight of 50g, but we can still accept maybe everything between 48g and 52g. Often they are not going to weight each and every chocolate bar, instead on regular intervals they will take a batch, weigh them and take the average. That average is plotted on the chart, as we are doing now. So here we have `target = 50`, `lower control limit = 48` and `upper control limit = 52`. If an average is outside the limits, it indicates an issue with the production line, but there could be also other issues, even if all values are within the limits. For instance, if we see all values above the target, we should adjust the machine, because the bars are consistently too heavy.
+The chart we are creating is known as a **Statistical Process Control (SPC) Chart**, also referred to as a **Control Chart**. It is a fundamental tool used by quality managers in various manufacturing processes.
 
+To illustrate, let's consider a scenario where we are producing chocolate bars with a target weight of 50g and an acceptable error margin of ±2g. Instead of weighing each individual chocolate bar, we take regular intervals of a batch, measure the average weight, and plot it on the control chart.
 
-* [This video explains the process visually.](https://www.youtube.com/watch?v=Ugcb7Vlp0Ts)
-* We can divide the plot into different zones
-   look [here](https://www.sixsigma-institute.org/Six_Sigma_DMAIC_Process_Control_Phase_What_Are_Control_Charts.php)
-* [here](https://www.sixsigma-institute.org/Six_Sigma_DMAIC_Process_Control_Phase_SPC_Out_Of_Control.php) are 7 rules
-   that you will be implementing.
+For the given example:
+- Target: 50g
+- Lower Control Limit: 48g
+- Upper Control Limit: 52g
 
-> we have,</br>
-> TARGET = 40</br>
-> UPPER ZONE C: 40 - 41</br>
-> UPPER ZONE B: 41- 42</br>
-> UPPER ZONE A: 43 - 43</br>
-> UCL: 43</br>
-> LOWER ZONE C: 39 - 40</br>
-> LOWER ZONE B: 38- 39</br>
-> LOWER ZONE A: 37 - 38</br>
-> LCL: 37 (edited)</br>
+If the average weight falls outside these control limits, it indicates an issue with the production line. However, even if all values are within the limits, there could still be problems. For instance, if all values are consistently above the target, it suggests the need to adjust the machine, as the bars are consistently too heavy.
+
+For a visual explanation of the process, you can watch this [video](https://www.youtube.com/watch?v=Ugcb7Vlp0Ts).
+
+The plot can be divided into different zones, as shown [here](https://www.sixsigma-institute.org/Six_Sigma_DMAIC_Process_Control_Phase_What_Are_Control_Charts.php).
+
+To implement the control chart effectively, you should follow the 7 rules mentioned [here](https://www.sixsigma-institute.org/Six_Sigma_DMAIC_Process_Control_Phase_SPC_Out_Of_Control.php).
+
+In our exercise, the zones for the control chart will be defined as follows:
+
+| ZONE NAME           | LOWER LIMIT | UPPER LIMIT |
+|---------------------|-------------|-------------|
+| UPPER CONTROL LIMIT | 43          | 43          |
+| UPPER ZONE A        | 42          | 43          |
+| UPPER ZONE B        | 41          | 42          |
+| UPPER ZONE C        | 40          | 41          |
+| TARGET              | 40          | 40          |
+| LOWER ZONE C        | 39          | 40          |
+| LOWER ZONE B        | 38          | 39          |
+| LOWER ZONE A        | 37          | 38          |
+| LOWER CONTROL LIMIT | 37          | 37          |
+
+These zones provide a structured way to analyze the data and detect any variations or issues in the production process.
+
 
 The final plot should look something like below 👇
 >initially it should look something like below
